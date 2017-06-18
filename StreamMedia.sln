@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StreamMediaControl", "StreamMediaControl\StreamMediaControl.vcxproj", "{871CD693-ECE4-43A7-AA66-6F4795B8430A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VideoDLL", "VideoDLL\VideoDLL.vcxproj", "{A7FB99AD-3D53-4233-989F-B69A954F6B9A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetDLL", "NetDLL\NetDLL.vcxproj", "{3B99B096-CF7D-4E34-978E-C36975752A1A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EncoderDLL", "EncoderDLL\EncoderDLL.vcxproj", "{7529FF40-C5F4-4FAF-8775-123C3E3BC5C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{871CD693-ECE4-43A7-AA66-6F4795B8430A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{871CD693-ECE4-43A7-AA66-6F4795B8430A}.Debug|Win32.Build.0 = Debug|Win32
+		{871CD693-ECE4-43A7-AA66-6F4795B8430A}.Release|Win32.ActiveCfg = Release|Win32
+		{871CD693-ECE4-43A7-AA66-6F4795B8430A}.Release|Win32.Build.0 = Release|Win32
+		{A7FB99AD-3D53-4233-989F-B69A954F6B9A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A7FB99AD-3D53-4233-989F-B69A954F6B9A}.Debug|Win32.Build.0 = Debug|Win32
+		{A7FB99AD-3D53-4233-989F-B69A954F6B9A}.Release|Win32.ActiveCfg = Release|Win32
+		{A7FB99AD-3D53-4233-989F-B69A954F6B9A}.Release|Win32.Build.0 = Release|Win32
+		{3B99B096-CF7D-4E34-978E-C36975752A1A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B99B096-CF7D-4E34-978E-C36975752A1A}.Debug|Win32.Build.0 = Debug|Win32
+		{3B99B096-CF7D-4E34-978E-C36975752A1A}.Release|Win32.ActiveCfg = Release|Win32
+		{3B99B096-CF7D-4E34-978E-C36975752A1A}.Release|Win32.Build.0 = Release|Win32
+		{7529FF40-C5F4-4FAF-8775-123C3E3BC5C1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7529FF40-C5F4-4FAF-8775-123C3E3BC5C1}.Debug|Win32.Build.0 = Debug|Win32
+		{7529FF40-C5F4-4FAF-8775-123C3E3BC5C1}.Release|Win32.ActiveCfg = Release|Win32
+		{7529FF40-C5F4-4FAF-8775-123C3E3BC5C1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
