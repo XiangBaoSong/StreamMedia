@@ -10,11 +10,32 @@
 #define NETDLL_API __declspec(dllimport)
 #endif
 
+#include "NetDataDefine.h"
+
 // 此类是从 NetDLL.dll 导出的
 class NETDLL_API CNetDLL {
 public:
 	CNetDLL(void);
 	// TODO: 在此添加您的方法。
+	bool InitClient(const char* pszIp,const short sPort);
+	bool InitService(const short sPort);
+
+	CNetDLL* GetConnect();
+	
+	int RecMsg();
+	int SendMsg();
+
+	void DisConnect();
+
+	SOCKET GetSocket();
+	const char* GetIP();
+	//bool m_bService;
+
+private:
+	stNetPara m_stNetPara;
+	bool Init(const short sPort,const char* pszIP=NULL);
+
+	char szErr[256];
 };
 
 extern NETDLL_API int nNetDLL;
