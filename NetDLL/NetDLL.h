@@ -13,24 +13,24 @@
 #include "NetDataDefine.h"
 
 // 此类是从 NetDLL.dll 导出的
-class NETDLL_API CNetDLL {
+class NETDLL_API CMySocket {
 public:
-	CNetDLL(void);
+	CMySocket(void);
+	~CMySocket(void);
 	// TODO: 在此添加您的方法。
 	bool InitClient(const char* pszIp,const short sPort);
 	bool InitService(const short sPort);
 
-	CNetDLL* GetConnect();
+	CMySocket* GetConnect();
 	
-	int RecMsg();
-	int SendMsg();
+	int RecMsg(char* pszRecvBuffer,int nRecvLength);
+	int SendMsg(const char* pszSendBuffer,int nSendLength);
 
 	void DisConnect();
 
 	SOCKET GetSocket();
 	const char* GetIP();
 	//bool m_bService;
-
 private:
 	stNetPara m_stNetPara;
 	bool Init(const short sPort,const char* pszIP=NULL);

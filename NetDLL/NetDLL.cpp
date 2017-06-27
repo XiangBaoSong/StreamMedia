@@ -16,12 +16,14 @@ NETDLL_API int fnNetDLL(void)
 
 // 这是已导出类的构造函数。
 // 有关类定义的信息，请参阅 NetDLL.h
-CNetDLL::CNetDLL()
+CMySocket::CMySocket()
 {
+	memset(&m_stNetPara,0,sizeof m_stNetPara);
+
 	return;
 }
 
-bool CNetDLL::Init(const short sPort,const char* pszIP)
+bool CMySocket::Init(const short sPort,const char* pszIP)
 {
 	if(WSAStartup(MAKEWORD(2,2), &m_stNetPara.wsd) != 0)
 	{
@@ -46,7 +48,7 @@ bool CNetDLL::Init(const short sPort,const char* pszIP)
 	}
 }
 
-bool CNetDLL::InitClient( const char* pszIp,const short sPort )
+bool CMySocket::InitClient( const char* pszIp,const short sPort )
 {
 	if (NULL==pszIp)
 	{
@@ -64,10 +66,12 @@ bool CNetDLL::InitClient( const char* pszIp,const short sPort )
 		return false;
 	}
 
+	m_stNetPara.enSocket = enClientSocket;
+
 	return true;
 }
 
-bool CNetDLL::InitService( const short sPort )
+bool CMySocket::InitService( const short sPort )
 {
 	bool bRet = Init(sPort);
 	if (!bRet)
@@ -87,21 +91,25 @@ bool CNetDLL::InitService( const short sPort )
 		return false;
 	}
 
+	m_stNetPara.enSocket = enListenSocket;
+
 	return true;
 }
 
-CNetDLL* CNetDLL::GetConnect()
+CMySocket* CMySocket::GetConnect()
 {
-	if (true==m_stNetPara.bClient)
+	if (true==m_stNetPara.enSocket)
 	{
 		return NULL;
 	}
 
-	CNetDLL* pNetDLL = new CNetDLL();
+	CMySocket* pNetDLL = new CMySocket();
 	if (NULL==pNetDLL)
 	{
 		return false;
 	}
+
+	pNetDLL->m_stNetPara.enSocket = enConnectedSocket;
 
 	int nAddLen = sizeof(m_stNetPara.sockAdde_in);
 	pNetDLL->m_stNetPara.sock = accept(pNetDLL->m_stNetPara.sock,
@@ -114,4 +122,28 @@ CNetDLL* CNetDLL::GetConnect()
 	}
 
 	return pNetDLL;
+}
+
+CMySocket::~CMySocket( void )
+{
+	closesocket(m_stNetPara.sock);
+
+	if (enConnectedSocket!=m_stNetPara.enSocket)
+	{
+		clear();
+	}
+}
+
+int CMySocket::RecMsg(char* pszRecvBuffer,int nRecvLength)
+{
+	int nRecLen = recv(m_stNetPara.sock, pszRecvBuffer, nRecvLength, 0);
+
+	return nRecLen;
+}
+
+int CMySocket::SendMsg(const char* pszSendBuffer,int nSendLength)
+{
+	int nSendLen = send(m_stNetPara.sock, pszSendBuffer, nSendLength, 0);
+
+	return nSendLen;
 }
