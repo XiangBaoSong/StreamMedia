@@ -1,27 +1,27 @@
-﻿生成启动时间为 2017/6/29 20:17:04。
+﻿生成启动时间为 2017/7/4 9:39:53。
      1>项目“G:\StreamMedia\Client\H264Test\H264Test\H264Test.vcxproj”在节点 2 上(build 个目标)。
-     1>PrepareForBuild:
-         正在创建目录“G:\StreamMedia\Client\H264Test\Debug\”。
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          正在创建“Debug\H264Test.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\H264Test.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
+         所有输出均为最新。
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\H264Test.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt H264Test.cpp
          H264Test.cpp
+     1>g:\streammedia\client\h264test\h264test\h264test.cpp(26): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>g:\streammedia\client\h264test\h264test\h264test.cpp(14): warning C4101: “nYo”: 未引用的局部变量
+     1>g:\streammedia\client\h264test\h264test\h264test.cpp(14): warning C4101: “nXo”: 未引用的局部变量
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\H264Test.exe.embed.manifest.res" Debug\H264Test_manifest.rc 
+         所有输出均为最新。
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\StreamMedia\Client\H264Test\Debug\H264Test.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\H264Test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\StreamMedia\Client\H264Test\Debug\H264Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\StreamMedia\Client\H264Test\Debug\H264Test.lib" /MACHINE:X86 Debug\H264Test.exe.embed.manifest.res
+         Debug\Algorithm.obj
          Debug\H264Test.obj
          Debug\stdafx.obj
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\H264Test.exe.embed.manifest" /manifest Debug\H264Test.exe.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\H264Test.exe.embed.manifest.res" Debug\H264Test_manifest.rc 
+         所有输出均为最新。
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\StreamMedia\Client\H264Test\Debug\H264Test.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\H264Test.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\StreamMedia\Client\H264Test\Debug\H264Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\StreamMedia\Client\H264Test\Debug\H264Test.lib" /MACHINE:X86 Debug\H264Test.exe.embed.manifest.res
-         Debug\H264Test.obj
-         Debug\stdafx.obj
+         所有输出均为最新。
          H264Test.vcxproj -> G:\StreamMedia\Client\H264Test\Debug\H264Test.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\H264Test.unsuccessfulbuild”。
@@ -30,4 +30,4 @@
 
 生成成功。
 
-已用时间 00:00:06.60
+已用时间 00:00:01.26

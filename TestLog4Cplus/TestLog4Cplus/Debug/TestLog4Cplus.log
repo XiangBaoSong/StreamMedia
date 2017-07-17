@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/7/11 11:33:28。
+     1>项目“G:\StreamMedia\Client\TestLog4Cplus\TestLog4Cplus\TestLog4Cplus.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\TestLog4Cplus.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\TestLog4Cplus.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TestLog4Cplus.cpp
+         TestLog4Cplus.cpp
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(39): error C2065: “auto_ptr”: 未声明的标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(39): error C2275: “log4cplus::Layout”: 将此类型用作表达式非法
+                 g:\streammedia\client\testlog4cplus\include\log4cplus\layout.h(73) : 参见“log4cplus::Layout”的声明
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(39): error C3861: “pSimpleLayout”: 找不到标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(40): error C2065: “pSimpleLayout”: 未声明的标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(43): error C2065: “auto_ptr”: 未声明的标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(43): error C2275: “log4cplus::Layout”: 将此类型用作表达式非法
+                 g:\streammedia\client\testlog4cplus\include\log4cplus\layout.h(73) : 参见“log4cplus::Layout”的声明
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(43): error C3861: “pTTCLayout”: 找不到标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(44): error C2065: “pTTCLayout”: 未声明的标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(47): error C2065: “auto_ptr”: 未声明的标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(47): error C2275: “log4cplus::Layout”: 将此类型用作表达式非法
+                 g:\streammedia\client\testlog4cplus\include\log4cplus\layout.h(73) : 参见“log4cplus::Layout”的声明
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(47): error C3861: “pPatternLayout”: 找不到标识符
+     1>g:\streammedia\client\testlog4cplus\testlog4cplus\testlog4cplus.cpp(48): error C2065: “pPatternLayout”: 未声明的标识符
+     1>已完成生成项目“G:\StreamMedia\Client\TestLog4Cplus\TestLog4Cplus\TestLog4Cplus.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.40
